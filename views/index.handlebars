@@ -1,38 +1,75 @@
-<h1>Which Sandwich!?</h1>
 
-<h2>Sandwiches to eat!</h2>
+          <div class="m-5 row justify-content-center">
+            <div>
+              <h1 class="mb-5">Which Sandwich!?</h1>
+            </div>
+          </div>
 
-<ul>
-  {{#each sandwiches}}
-    {{#unless devoured}}
-      {{> sandwiches/sandwich-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-4">
+             {{!-- start of card for sandwiches to eat --}}
+              <div class="card">
+                <div class="card-header" >
+                  <h3 class="text-center">Sandwiches to Eat!</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                 {{#each sandwiches}}
+                    {{#unless devoured}}
+                      {{> sandwiches/sandwich-block devoured=true}}
+                    {{/unless}}
+                 {{/each}}
+                </ul>
+              </div>
+            </div>
+             {{!-- end of card for sandwiches to eat --}}
 
-<h2>Sandwiches that have been DEVOURED!</h2>
+            {{!-- column for gif --}}
+            <div class="d-flex justify-content-center col-md-3">
+                <iframe src="https://giphy.com/embed/jsxq4aELvZPZrwzHVu" width="250" height="250" frameBorder="0" class="giphy-embed"
+                  allowFullScreen></iframe>
+            </div>
 
-<ul>
-  {{#each sandwiches}}
-    {{#if devoured}}
-      {{> sandwiches/sandwich-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+            <div class="col-md-4">
+              {{!-- start of card for sandwiches to eat --}}
+              <div class="card">
+                <div class="justify-content-center card-header">
+                  <h3 class="text-center">Sandwiches Devoured!</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                  {{#each sandwiches}}
+                    {{#if devoured}}
+                      {{> sandwiches/sandwich-block devoured=false}}
+                    {{/if}}
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="m-5 row justify-content-center">
+            <div class="column">
+  
+              <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                  <div>
+                    <h3>Add a Sandwich</h3>
+                  </div>
+                  <form class="create-form">
+                    <div class="form-group">
+                      <label for="sw">Sandwich Name:</label>
+                      <input type="text" id="sw" name="sandwich_name">
+                    </div>
+                    <button class="btn btn-dark" type="submit">Add Sandwich</button>
+                  </form>
+                </div>
+              </div>
+    
+              
+            </div>
+          </div>
 
-<h2>Add a Sandwich</h2>
-<form class="create-form">
 
-  <div class="form-group">
-    <label for="sw">Sandwich Name:</label>
-    <input type="text" id="sw" value="0" name="sandwich_name">
-  </div>
-{{!-- 
-  <div class="form-group">
-    <label for="devoured">Eat Me?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Eaten!<br>
-    <input type="radio" name="devoured" value="0"> Eat me!
-  </div> --}}
 
-  <button type="submit">Add Sandwich</button>
-</form>
+
+
+

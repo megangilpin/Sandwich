@@ -1,9 +1,16 @@
-<li>
-	{{sandwich_name}}
-
-	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}Eat me!{{else}}All gone!{{/if}}
-	</button>
-
-	<button class="delete-sandwich" data-id="{{this.id}}">DELETE!</button>
+<li class="h4 list-group-item">
+	<div>
+		{{sandwich_name}}
+	</div>
+    {{#if devoured}}
+     	<button class="m-1 btn btn-sm btn-outline-secondary change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+     		&#127860; I'm starving, Let's eat!
+     	</button>
+     	<button class="m-1 btn btn-sm btn-outline-secondary delete-sandwich" data-id="{{this.id}}">&#128465; Trash it</button>
+   	{{else}}
+     	<button class="m-1 btn btn-sm btn-outline-secondary change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+     		&#10024; Make again!
+     	</button>
+     	<button class="m-1 btn btn-sm btn-outline-secondary delete-sandwich" data-id="{{this.id}}">&#129314; Throw it out!</button>
+   	{{/if}}
 </li>
