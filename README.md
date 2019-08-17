@@ -23,12 +23,12 @@ This **full-stack site** deployed on Heroku takes in and stores sandwhiches from
 ## Technical Approach
 1. Install npms to be required - express, express-handlebars, mysql, dotenv
 
-###DB Setup
+**DB Setup**
 1. Set up the schema.sql file with the sandwich database and sandwiches table
 1. Set up seeds.sql file with insert queries to populate the sandwiches table
 1. Run schema.sql and seeds.sql files to create the database
 
-###Config Setup
+**Config Setup**
 1. Inside the connection.js file, setup the code to connect Node to MySQL.Export the connection
 1. Create an orm.js file with the following:
     1. require connection.js
@@ -38,17 +38,17 @@ This **full-stack site** deployed on Heroku takes in and stores sandwhiches from
        updateOne()
   - Export the ORM object in module.exports
   
-###Model Setup
+**Model Setup**
 1. Set up the sandwhich.js file the models folder with the following:
     1. Import orm.js into sandwhich.js
     2. Code that will call the ORM functions using sandwhich specific input for the ORM
     3. Export the sandwhich.js file
     
-###Controller Setup
+**Controller Setup**
 1. Inside controllers folder create the following:
     1. sandwhiches_controller.js importing Express and sandwhich.js and exproting the router for the app
     
-### View Setup
+**View Setup**
 1. Create a folder named views.
 1. Create the index.handlebars file inside views directory - main HTML to utilize Handlebars to easily display sandwiches
 1. Create layouts directory in the views directory that will house the main.handlebars file  - will be used to display the index.handlebars file
