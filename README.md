@@ -1,4 +1,4 @@
-# Which Sandwhich? :fork_and_knife:
+# Which Sandwich? :fork_and_knife:
 
  https://fast-fortress-18955.herokuapp.com/
 
@@ -7,7 +7,7 @@
 Restaurant app that lets users input the names of the sandwich they'd like to eat.
 
 ## Functionality Breakdown
-This **full-stack site** deployed on Heroku takes in and stores sandwhiches from the user then allows them to either eat the sandwich, delete the sandwich or remake it to eat again. 
+This **full-stack site** deployed on Heroku takes in and stores sandwiches from the user then allows them to either eat the sandwich, delete the sandwich or remake it to eat again. 
 
 ## Technology Used
 - MySQL
@@ -39,14 +39,14 @@ This **full-stack site** deployed on Heroku takes in and stores sandwhiches from
   - Export the ORM object in module.exports
   
 **Model Setup**
-1. Set up the sandwhich.js file the models folder with the following:
-    1. Import orm.js into sandwhich.js
-    2. Code that will call the ORM functions using sandwhich specific input for the ORM
+1. Set up the sandwich.js file the models folder with the following:
+    1. Import orm.js into sandwich.js
+    2. Code that will call the ORM functions using sandwich specific input for the ORM
     3. Export the sandwhich.js file
     
 **Controller Setup**
 1. Inside controllers folder create the following:
-    1. sandwhiches_controller.js importing Express and sandwhich.js and exproting the router for the app
+    1. sandwhiches_controller.js importing Express and sandwich.js and exproting the router for the app
     
 **View Setup**
 1. Create a folder named views.
