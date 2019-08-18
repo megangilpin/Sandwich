@@ -42,11 +42,11 @@ This **full-stack site** deployed on Heroku takes in and stores sandwiches from 
 1. Set up the sandwich.js file the models folder with the following:
     1. Import orm.js into sandwich.js
     2. Code that will call the ORM functions using sandwich specific input for the ORM
-    3. Export the sandwhich.js file
+    3. Export the sandwich.js file
     
 **Controller Setup**
 1. Inside controllers folder create the following:
-    1. sandwhiches_controller.js importing Express and sandwich.js and exproting the router for the app
+    1. sandwiches_controller.js importing Express and sandwich.js and exproting the router for the app
     
 **View Setup**
 1. Create a folder named views.
