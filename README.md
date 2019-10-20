@@ -2,7 +2,7 @@
 
  https://fast-fortress-18955.herokuapp.com/
 
- ![Which Sandwich Demo](demo/whichSandwich.gif)
+ ![Which Sandwich Demo](demo/whichSandwichmed.gif)
 
 ## Overview
 
