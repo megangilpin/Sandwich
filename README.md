@@ -2,12 +2,14 @@
 
  https://fast-fortress-18955.herokuapp.com/
 
+ ![Which Sandwich Demo](demo/whichSandwich.gif)
+
 ## Overview
 
 Restaurant app that lets users input the names of the sandwich they'd like to eat.
 
 ## Functionality Breakdown
-This **full-stack site** deployed on Heroku takes in and stores sandwiches from the user then allows them to either eat the sandwich, delete the sandwich or remake it to eat again. 
+This **full-stack site** deployed on Heroku takes in and stores types of sandwiches from the user then allows them to either eat the sandwich, delete the sandwich or remake it to eat with a click of a button.
 
 ## Technology Used
 - MySQL
